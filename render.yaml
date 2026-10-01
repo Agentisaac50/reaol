@@ -1,0 +1,20 @@
+# Render Blueprint – Static Site
+# https://render.com/docs/static-sites
+# Deploy: Connect this repo on Render → New → Static Site
+# or use "Blueprint" and select this render.yaml
+
+services:
+  - type: web
+    name: agentisaac256
+    runtime: static
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin

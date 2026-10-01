@@ -1,0 +1,4 @@
+# Netlify / Cloudflare Pages
+# No SPA rewrite needed – this is a multi-page static site.
+# Example of a useful redirect if you ever rename a page:
+# /old-page   /new-page   301
